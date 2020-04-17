@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/iterate_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="36dp"
+        android:textSize="18sp"
+        android:text="@string/_1_5000"
+        tools:text="1/10"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/good_and_bad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="36dp"
+        android:textSize="18sp"
+        android:text="@string/_0_0"
+        tools:text="0/0"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:textSize="18sp"
+        tools:text="Advise - советовать" />
+    <TextView
+        android:id="@+id/random_a_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:textAlignment="center"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:textSize="18sp"
+        tools:text="Some text - some translate" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/true_false_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/d"
+                android:text="@string/is_ture"
+                android:textColor="@color/textColor_2"
+                style="@style/Platform.MaterialComponents" />
+
+            <Button
+                android:id="@+id/buttonFalse"
+                style="@style/Platform.MaterialComponents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/d"
+                android:text="@string/is_false"
+                android:textColor="@color/textColor_2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/previous_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_to_left"
+                android:backgroundTint="@color/d"
+                tools:ignore="PrivateResource"
+                android:contentDescription="@string/previous" />
+
+            <ImageButton
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_like"
+                android:backgroundTint="@color/d"
+                tools:ignore="PrivateResource"
+                android:contentDescription="@string/like" />
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/d"
+                android:src="@drawable/ic_to_right"
+                android:contentDescription="@string/next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

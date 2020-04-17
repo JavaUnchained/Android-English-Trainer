@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a4c8c</color>
+    <color name="colorAccent">#155fff</color>
+    <color name="colorPrimaryDark">#032965</color>
+    <color name="a">#e2eaf2</color>
+    <color name="b">#b6cbdf</color>
+    <color name="c">#85a9ca</color>
+    <color name="d">#5487b4</color>
+    <color name="e">#306da4</color>
+    <color name="f">#0b5394</color>
+    <color name="j">#084281</color>
+    <color name="h">#063977</color>
+    <color name="x">#95b6ff</color>
+    <color name="y">#6294ff</color>
+    <color name="z">#2f71ff</color>
+    <color name="textCollor">#FFFFFF</color>
+    <color name="textColor_2">#C1D4E4</color>
+    <color name="correct_answer">#AED581</color>
+    <color name="incorrect_answer">#E57373</color>
+</resources>
